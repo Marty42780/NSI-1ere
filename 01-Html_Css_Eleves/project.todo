@@ -1,0 +1,18 @@
+Site:
+    Main:
+        ☐ Mettre le contenu de Thème 3 @low
+        ☐ Faire le Carousel
+        ☐ Mettre a jour les couleurs (tout les themes et var en css)
+            - https://htmlcolorcodes.com/fr/tableau-de-couleur/tableau-de-couleur-design-plat/
+    Page de promenade animale:
+        ✔ Trouver des animaux @today @done (01/12/2021, 09:19:22)
+        ☐ Faire le template de 1 animal @today 
+        ☐ Flexbox x Grid for the content (see Proto File: file:///E:/01-Html_Css_Eleves/proto.png)
+            - https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
+    
+    Page Tier Lists:
+        ☐ Tier List Eaux
+        ☐ Tier List Animés
+        ☐ Tier List Pâtes
+        ☐ Tier List Bonbons
+        ☐ Tier List Fast-Food
