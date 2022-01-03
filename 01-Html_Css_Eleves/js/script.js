@@ -1,9 +1,7 @@
 // Menu Div
 const menuDiv = document.querySelector('#menuDiv');
 const menuButton = document.querySelector('#menuButton');
-setTimeout(() => {
-    document.querySelector('#audio').play();
-  }, 500)
+
 menuDiv.style.display = "block"; // Securité si le js ne se charge pas
 
 function showMenu() {

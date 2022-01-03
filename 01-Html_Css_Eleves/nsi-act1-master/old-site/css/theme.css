@@ -1,0 +1,113 @@
+header {
+  height: 120px;
+  width: 90%;
+  background-color: rgb(0, 150, 150);
+  border: 1px solid black;
+  margin: 15px;
+  text-align: center;
+}
+
+.imageflottante1 {
+  float: left;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  color: black;
+}
+
+#menu {
+  height: 430px;
+  width: 20%;
+  vertical-align: top;
+  border: 1px solid black;
+  margin: 15px;
+  background-color: rgb(255, 155, 55);
+  float: left;
+}
+#menu .navframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+#navlist {
+  text-decoration: none;
+  list-style: none;
+}
+#navlist li {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  width: 4em;
+  border: solid 1px black;
+  margin: 1em;
+  background-color: rgb(0, 150, 150);
+  border-radius: 10px;
+  text-align: center;
+}
+#navlist a {
+  display: inline-block;
+}
+section {
+  height: 30em;
+  margin-top: 30px;
+  margin: 10px;
+  border: 1px solid black;
+}
+section#first {
+  float: left; 
+  width: 37%;
+}
+section#second {
+  float: left;
+  width: 37%;
+}
+
+section article {
+  background: rgb(255, 255, 155);
+  border: 1px solid black;
+  width: 99%;
+  height: 190px;
+  margin: 5px;
+}
+
+section aside {
+  background: rgb(100, 255, 100);
+  height: 40px;
+  width: 100%;
+  border: 1px solid black;
+  margin-left: 65%;
+  text-align: center;
+}
+.pdf {
+  height: 100%;
+  width: 100%;
+}
+#footer {
+  background-color: rgb(100, 200, 255);
+  width: 90%;
+  margin: 20px;
+  height: 60px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 2px;
+  border: 1px solid black;
+}
+
+
+p {
+  text-align: center;
+  color: black;
+}
