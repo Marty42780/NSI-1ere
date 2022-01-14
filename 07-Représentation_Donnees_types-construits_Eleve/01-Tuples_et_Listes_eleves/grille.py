@@ -12,6 +12,19 @@ def afficheGrille(grille: list):
         result += "\n"
     return(result)
     
-grille = creeGrille(3,3)
+def sommeLigne(grille: list, lig: int):
+    result = 0
+    for el in grille[lig]:
+        result += el
+    return result
 
-print(afficheGrille(grille))
+def sommeColone(grille: list, col: int):
+    result = 0
+    for ligne in grille:
+        result += ligne[col]
+    return result
+
+grille0 = creeGrille(3,3)
+grille1 = [[1,2,3],[4,5,6],[7,8,9],[2,3,7]]
+print("sommeLigne " + str(sommeLigne(grille1, 0)))
+print("sommeColone " + str(sommeColone(grille1, 0)))
