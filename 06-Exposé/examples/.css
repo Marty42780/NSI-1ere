@@ -1,0 +1,26 @@
+* {
+    font-family: "Inter var", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu,
+      Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body {
+  background-color: #ECF0F1;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+#presentation {
+  margin: 2em;
+  padding: 1.5em 3em 2em 3em;
+  width: 30em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 1px 0 hsl(0deg 0% 100% / 15%),
+    0 50px 100px -20px rgb(50 50 93 / 30%), 0 30px 60px -30px rgb(0 0 0 / 50%),
+    -10px 10px 60px -10px rgb(103 178 111 / 30%);
+  
+}
+
