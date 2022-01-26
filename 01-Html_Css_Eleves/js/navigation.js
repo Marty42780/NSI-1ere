@@ -1,30 +1,34 @@
-if (docname === "index") {acceuilLink = '#'} else {acceuilLink = '../index.html'}
-if (docname === "index") {acceuilLink = 'themes/'} else {acceuilLink = 'index.html'}
-
+acceuil = ["#", "disable"]
+theme1 = ["themes/theme1.html", "enable"]
+theme2 = ["themes/theme2.html", "enable"]
+theme3 = ["themes/theme3.html", "enable"]
+theme4 = ["themes/https://youtu.be/dQw4w9WgXcQ", "enable"]
+theme5 = ["themes/animaux.html", "enable"]
+theme6 = ["themes/tierlist.html", "enable"]
 
 document.write(`
 <section id="top-bar">
     <h1>NSI - Acceuil</h1>
     <ul id="menu">
-        <a href="` + acceuilLink + `" target="_parent" class="` + class0 + ` zero">
+        <a href="` + acceuil[0] + `" target="_parent" class="` + acceuil[1] + ` zero">
             <li>Accueil</li>
         </a>
-        <a href="` + themeLink + `" class="` + class1 + ` one">
+        <a href="` + theme1[0] + `" class="` + theme1[1] + ` one">
             <li>Theme 1</li>
         </a>
-        <a href="themes/theme2.html" class="enable two"> 
+        <a href="` + theme2[0] + `" class="` + theme2[1] + ` two"> 
             <li>Theme 2</li> 
         </a>
-        <a href="themes/theme3.html" class="enable three">
+        <a href="` + theme3[0] + `" class="` + theme3[1] + ` three">
             <li>Theme 3</li>
         </a>
-        <a href="https://youtu.be/dQw4w9WgXcQ" class="enable four">
+        <a href="` + theme4[0] + `" class="` + theme4[1] + ` four">
             <li>Theme 4</li>
         </a>
-        <a href="themes/animaux.html" class="enable five">
+        <a href="` + theme5[0] + `" class="` + theme5[1] + ` five">
             <li>Theme 5</li>
         </a>
-        <a href="themes/tierlist.html" class="enable six">
+        <a href="` + theme6[0] + `" class="` + theme6[1] + ` six">
             <li>Theme 6</li>
         </a>
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
