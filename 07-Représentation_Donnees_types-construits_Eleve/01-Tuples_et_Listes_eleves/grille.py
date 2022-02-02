@@ -35,9 +35,23 @@ def sommeDiagonale(grille: list):
         print("La grille n'est pas carré")
     return result
 
+def sommeDiagonale2(grille: list):
+    i = len(grille)-1
+    result = 0
+    try:
+        for ligne in grille:
+            result += ligne[i]
+            i -= 1
+    except IndexError:
+        print("La grille n'est pas carré")
+    return result
+
+
+
 grille0 = creeGrille(3,3)
-grille1 = [[1,2,3],[4,5,6],[7,8,9],[10,11,12]]
+grille1 = [[1,2,3],[4,5,6],[7,8,9]]
 print("sommeLigne " + str(sommeLigne(grille1, 0)))
 print("sommeColone " + str(sommeColone(grille1, 0)))
 print("sommeDiagonale " + str(sommeDiagonale(grille1)))
+print("sommeDiagonale2 " + str(sommeDiagonale2(grille1)))
 
