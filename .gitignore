@@ -1,7 +1,30 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,python,jekyll,microsoftoffice,vuejs,web
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,python,jekyll,microsoftoffice,vuejs,web
+# Created by https://www.toptal.com/developers/gitignore/api/windows,vuejs,visualstudiocode,python,microsoftoffice,jekyll,git,database
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,vuejs,visualstudiocode,python,microsoftoffice,jekyll,git,database
+
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 ### Jekyll ###
 _site/
@@ -215,21 +238,6 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-### Web ###
-*.asp
-*.cer
-*.csr
-*.css
-*.htm
-*.html
-*.js
-*.jsp
-*.php
-*.rss
-*.wasm
-*.wat
-*.xhtml
-
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -256,7 +264,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,python,jekyll,microsoftoffice,vuejs,web
+# End of https://www.toptal.com/developers/gitignore/api/windows,vuejs,visualstudiocode,python,microsoftoffice,jekyll,git,database
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
