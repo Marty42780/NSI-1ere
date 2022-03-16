@@ -1,13 +1,15 @@
 import csv
 
 ''' Ouverture du fichier '''
-file = open('data/echantillon_villes_manche.csv') #permet d'ouvrir le ficher en vert
+file = open('data/echantillon_villes_manche.csv')
 fichier = csv.reader(file) # fichier est une liste des lignes
+
 
 ''' Declaration des variables '''
 listeVille = []
 altitudeVilleMax = []
 altitudeVilleMin = []
+
 
 ''' On récupere pour chaques villes :
         - nom   
@@ -19,16 +21,18 @@ for ligne in fichier:
     altitudeVilleMin.append(ligne[12]) # Rajoute la hauteur min de la ville a la liste des altitudes
     altitudeVilleMax.append(ligne[13]) # Rajoute la hauteur max de la ville a la liste des altitudes
 
+
 ''' On enleve le premier element de chaques lignes car il s'agit du header '''
 del listeVille[0] 
 del altitudeVilleMax[0]
 del altitudeVilleMin[0]
 
-
 print("listeVille :", listeVille) 
 print("altitudeVilleMax :", altitudeVilleMax)
 print("altitudeVilleMin :", altitudeVilleMin)
 
+
+''' On récupere dans deux dictionnaires les atitudes maximum puis minimum ''' 
 DictVilleAltitudeMax={}
 for i in range(len(listeVille)):
     DictVilleAltitudeMax[listeVille[i]]=altitudeVilleMax[i]
@@ -39,11 +43,13 @@ for i in range(len(listeVille)):
     DictVilleAltitudeMin[listeVille[i]]=altitudeVilleMin[i]
 print(DictVilleAltitudeMin)
 
+
+''' Fonctions maxi et mini pour les altitudes maximum et minimum des villes '''
 def maxi(DictVilleAltitudeMax):
     """Give the city with the highest altitude
 
     Args:
-        DictVilleAltitudeMax (Dictionnary): All cities with their highest altitudes without headers
+        DictVilleAltitudeMax (Dictionnary): All cities with their highest altitudes
 
     Returns:
         Tuple: Name of the city and its altitude
@@ -54,23 +60,22 @@ def maxi(DictVilleAltitudeMax):
         if float(DictVilleAltitudeMax[x])>Nmax:
             Nmax=float(DictVilleAltitudeMax[x])
             Ville=x
-    return (Ville, Nmax)
-
-
+    return Ville, Nmax
 
 def mini(DictVilleAltitudeMin):
     """Give the city with the lowest altitude
 
     Args:
-        DictVilleAltitudeMin (Dictionary): All cities with their lowest altitudes without headers
+        DictVilleAltitudeMin (Dictionary): All cities with their lowest altitudes
 
     Returns:
         Tuple: Name of the city and its altitude
     """
-    Villemin=""
+    Ville=""
     Nmin=maxi(DictVilleAltitudeMin)[1]
     for x in DictVilleAltitudeMin:
         if float(DictVilleAltitudeMin[x])<Nmin:
             Nmin=float(DictVilleAltitudeMin[x])
-            Villemin=x
-    return Villemin, Nmin
+            Ville=x
+    return Ville, Nmin
+
