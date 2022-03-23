@@ -26,23 +26,26 @@ for ligne in fichier:
 del noms[0] 
 del latitudes[0]
 del hebergements[0]
-print("Noms :", noms) 
-print("Latitudes :", latitudes) 
-print(("Hebergement :", hebergements))
+# print("Noms :", noms) 
+# print("Latitudes :", latitudes) 
+# print(("Hebergement :", hebergements))
 
 
 ''' On récupère dans un dictionnaire la latitude pour chaque lycee ''' 
 for nom, latitude in zip(noms, latitudes):
     DictLyceeLatitudes[nom] = latitude
-print(DictLyceeLatitudes)
+    
+# print(DictLyceeLatitudes)
+
 
 ''' On récupère dans un dictionnaire l'hébergement pour chaque lycée '''
 for nom, hebergement in zip(noms, hebergements):
     DictLyceeHebergements[nom] = hebergement
-print(DictLyceeHebergements)
     
+print(DictLyceeHebergements)
 
-def mini(DictLyceeLatitudes):
+
+def mini(DictLyceeLatitudes: dict):
     """Give the high school with the lowest latitude
 
     Args:
@@ -58,9 +61,11 @@ def mini(DictLyceeLatitudes):
             Nmin=float(DictLyceeLatitudes[x])
             Lycee=x
     return Lycee, Nmin
-print(mini(DictLyceeLatitudes))
 
-def nbInternat(DictLyceeHebergements):
+# print(mini(DictLyceeLatitudes))
+
+
+def nbInternat(DictLyceeHebergements: dict):
     """Give number of high schools with boarding school
 
     Args:
