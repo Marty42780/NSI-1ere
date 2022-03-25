@@ -83,4 +83,3 @@ def nbInternat(DictLyceeHebergements: dict):
 
 print(nbInternat(DictLyceeHebergements))
 
-# TODO : Finir l'activité 1 ici
