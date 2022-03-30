@@ -2,13 +2,13 @@
   box-sizing: border-box;
   --text: #333338;
   --accueil: #CD6155; /* POMEGRANATE */
-  --theme1: #AF7AC5; /* AMETHYST */
-  --theme2: #5499C7; /* BELIZE HOLE */
-  --theme3: #48C9B0; /* TURQUOISE */
+  --themes: #AF7AC5; /* AMETHYST */
+  --animaux: #5499c7; /* BELIZE HOLE */
+  --tierlist: #48C9B0; /* TURQUOISE */
+  --disable: #AAB7B8; /* CONCRETE */
   --theme4: #52BE80; /* NEPHRITIS */
   --theme5: #F4D03F; /* SUNFLOWER */
   --theme6: #EB984E; /* CARROT */
-  --disable: #AAB7B8; /* CONCRETE */
 }
 #top-bar {
   position: relative;
@@ -50,28 +50,19 @@
   transform: scale(110%);
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
 }
-#menu a.enable.zero {
+.enable.accueil {
   background-color: var(--accueil);
 }
-#menu a.enable.one {
-  background-color: var(--theme1);
+.enable.themes {
+  background-color: var(--themes);
 }
-#menu a.enable.two {
-  background-color: var(--theme2);
+.enable.animaux {
+  background-color: var(--animaux);
 }
-#menu a.enable.three {
-  background-color: var(--theme3);
+.enable.tierlist {
+  background-color: var(--tierlist);
 }
-#menu a.enable.four {
-  background-color: var(--theme4);
-}
-#menu a.enable.five {
-  background-color: var(--theme5);
-}
-#menu a.enable.six {
-  background-color: var(--theme6);
-}
-#menu .disable {
+.disable {
   background-color: var(--disable);
   font-weight: bold;
   text-decoration: underline;
@@ -132,7 +123,7 @@
   text-decoration: none;
   transition: transform 0.3s ease;
 }
-#menuDiv .grid div:hover {
+#menuDiv .grid div:hover.enable {
   transform: scale(105%);
   transition: transform 0.3s ease;
 }
@@ -154,25 +145,4 @@
   color: var(--text);
   padding: 0.3em 0.5em 0.5em 0.5em;
   margin: 0;
-}
-#menuDiv .grid .theme1 {
-  background-color: var(--theme1);
-}
-#menuDiv .grid .theme1 img {
-  background-color: black;
-}
-#menuDiv .grid .theme2 {
-  background-color: var(--theme2);
-}
-#menuDiv .grid .theme3 {
-  background-color: var(--theme3);
-}
-#menuDiv .grid .theme4 {
-  background-color: var(--theme4);
-}
-#menuDiv .grid .theme5 {
-  background-color: var(--theme5);
-}
-#menuDiv .grid .theme6 {
-  background-color: var(--theme6);
 }
