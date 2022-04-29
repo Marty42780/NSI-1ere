@@ -10,7 +10,6 @@ plt.grid()
 plt.xlabel('abscisses')
 plt.ylabel('ordonnées')
 plt.axis('equal')
-plt.
 
 plt.show()
 plt.close()
