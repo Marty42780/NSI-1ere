@@ -41,14 +41,15 @@ section {
   width: 500px;
   height: 300px;
 }
-/* .slide p {
-   
-} */
+
 #buttonDiv {
   display: block;
 }
 #buttonDiv a {
-  /* position: relative;  */
+  position: relative; 
+  display: inline-block;
+
+  /* TODO: Fix the buttons positions */
   width: auto;
   cursor: pointer;
   padding: 10px;

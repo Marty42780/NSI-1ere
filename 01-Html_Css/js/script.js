@@ -29,6 +29,7 @@ var currentSlide = 0
 function showSlide(slideNb){
     slides[0].style.display = "none";
     slides[1].style.display = "none";
+    slides[2].style.display = "none";
     slides[slideNb].style.display = "flex";
 }
 function changeSlideWithButon(nb){

@@ -67,4 +67,5 @@ def sommeColonne(grille: list):
         grille[-1][colone] = somme
         somme = 0
     return grille
+
 print(sommeColonne(grille1))
