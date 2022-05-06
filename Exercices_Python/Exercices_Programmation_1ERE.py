@@ -1,4 +1,3 @@
-from audioop import reverse
 import random
 
 def random_list_V1():
@@ -10,7 +9,7 @@ def random_list_V1():
         nb = 1
     for i in L1:
         if i % 3 == 0:
-            L2.append(i)    
+            L2.append(i)
     return L1, L2
 
 def random_list_V2():
