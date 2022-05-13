@@ -1,12 +1,12 @@
-try {if (!acceuil[1] === "disable") {acceuil = ["index.html", "enable"]}} catch (e) {acceuil = ["index.html", "enable"]}
-try {if (!themes[1] === "disable") {themes = ["themes.html", "enable"]}} catch (e) {themes = ["themes.html", "enable"]}
-try {if (!animaux[1] === "disable") {animaux = ["animaux.html", "enable"]}} catch (e) {animaux = ["animaux.html", "enable"]}
-try {if (!tierlist[1] === "disable") {tierlist = ["tierlist.html", "enable"]}} catch (e) {tierlist = ["tierlist.html", "enable"]}
+try {if (acceuil[1] === "disable") {title = "Accueil"}} catch (e) {acceuil = ["index.html", "enable"]}    
+try {if (themes[1] === "disable") {title = "Thèmes"}} catch (e) {themes = ["themes.html", "enable"]}    
+try {if (animaux[1] === "disable") {title = "Zoo des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
+try {if (tierlist[1] === "disable") {title = "TierList"}} catch (e) {tierlist = ["tierlist.html", "enable"]}
 
 document.write(`
 <link rel="stylesheet" href="css/navigation.css" />
 <section id="top-bar">
-    <h1>NSI - Acceuil</h1>
+    <h1>NSI - ` + title + `</h1>
     <ul id="menu">
         <a href="` + acceuil[0] + `" class="` + acceuil[1] + ` accueil">
             <li>Accueil</li>
