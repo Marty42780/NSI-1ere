@@ -43,7 +43,6 @@ body {
 #menu a {
   text-decoration: none;
   padding: 10px;
-  /* width: 4em; */
   border: solid 1px black;
   margin: 1em;
   border-radius: 10px;
@@ -73,7 +72,6 @@ body {
 }
 .disable {
   background-color: var(--disable);
-  font-weight: bold;
   text-decoration: underline;
 }
 #menu button {

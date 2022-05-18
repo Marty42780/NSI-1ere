@@ -1,9 +1,21 @@
-h1 {
-  margin-top: 1em;
+
+h1 { /*Titre des activtés */
+  margin-top: 0;
   text-align: center;
+  font-size: 28px;
 }
-h2 {
+h3 { /* Numéros des activités */
+  margin-top: 2em;
+  text-align: center;
+  font-size: 22px;
+}
+h2 { /*Titre des elements */
   margin: 2em 2em 1em 2em;
+}
+p, ul {
+  font-size: 15;
+  line-height: 1.6;
+  font-weight: 500;
 }
 ul {
   padding-left: 20px;
@@ -20,11 +32,10 @@ div.doc {
   line-height: 1.5;
   font-size: 1p6x;
 }
-section.t {
+div.t {
   display: flex;
   flex-direction: column;
   padding-bottom: 2em;
-  align-items: 
 }
 /* --------------------------------- Thème 1 -------------------------------- */
 #t1 {
@@ -58,22 +69,45 @@ section.t {
 }
 
 /* --------------------------------- Thème 2 -------------------------------- */
-
-#lion {
-  position: fixed;
-  margin: 5em 0 0 0;
-  left: 42%;
-  z-index: 2;
+#t2 {
+  background-color: rgb(219, 205, 126);
 }
-section.sec1 {
-  display: none;
+div.t2-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  margin: 1em;
 }
 div.t2-larp {
-  margin: 1em 1em 1em 2em;
+  margin: 1em 0 1em 2em;
   width: 40em;
 }
 div.t2-algobox {
+  margin: 1em 0 1em 2em;
+  width: 40em;
+}
+
+/* --------------------------------- Thème 3 -------------------------------- */
+#t3 {
+  background-color: rgb(80, 209, 170);
+}
+div.t3-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.python1 {
+  margin: 1em 0 1em 2em;
+  border-radius: 10px;
+}
+.elephant {
   margin: 1em 1em 1em 2em;
+  border-radius: 100%;
+}
+div.t3-explication {
+  margin: 1em 0 1em 2em;
   width: 40em;
 }
