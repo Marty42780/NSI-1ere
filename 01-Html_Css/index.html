@@ -14,39 +14,35 @@
     <script src="js/navigation.js"></script>
     <!-- Presentation -->
     <section>
-    <div id="presentation">
-      <h1>Hi! 👋 Je m'appelle Martin</h1>
-      <h3>Je suis élève de 1ère 1 au Lycée Thomas Hélye</h3>
-      <p>
-        J'ai choisie la NSI pour en apprendre d'avantage dans le monde de la
-        programmation, de l'informatique, et de la technologie.
-      </p>
-      <p>
-        Depuis le début de l'année j'ai parcouru plein de thèmes à travers différentes
-        activités et je vous invite a les découvrir <a href="#" onclick="showMenu()" id="bioIci">ici</a>
-      </p>  
-    </div>
-
-    <!-- Carousel -->
-    <div id="slider">
-      <div class="slide">
-        <img src="images/carousel.jpeg">  
-        <p>Le carousel</p>
+      <div id="presentation">
+        <h1>Hi! 👋 Je m'appelle Martin</h1>
+        <h3>Je suis élève de 1ère 1 au Lycée Thomas Hélye</h3>
+        <p>
+          J'ai choisie la NSI pour en apprendre d'avantage dans le monde de la
+          programmation, de l'informatique, et de la technologie.
+        </p>
+        <p>
+          Depuis le début de l'année j'ai parcouru plein de thèmes à travers différentes
+          activités et je vous invite a les découvrir <a href="#" onclick="showMenu()" id="bioIci">ici</a>
+        </p>  
       </div>
-      <div class="slide">
-        <img src="images/python-logo.jpg">
-        <p>Python</p>
-      </div>
-      <div class="slide">
-        <img src="images/girage2.jpg">
-        <p>Le zoo</p>
-      </div>
-      <!-- Next and previous buttons -->
-      <div id="buttonDiv">
+      <!-- Carousel -->
+      <div id="carousel">
         <a onclick="changeSlideWithButon(-1)" class="prev">&#10094;</a>
+        <div class="slidesView">
+          <div class="slide">
+            <img src="images/carousel.jpeg">  
+          </div>
+          <div class="slide">
+            <img src="images/python-logo.jpg">
+          </div>
+          <div class="slide">
+            <img src="images/girage2.jpg">
+          </div>
+        </div>
         <a onclick="changeSlideWithButon(1)" class="next">&#10095;</a>
+        <!-- TODO Add text -->
       </div>
-    </div>
     </section>
     <!-- Footer avec les liens -->
     <footer>

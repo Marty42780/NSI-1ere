@@ -1,3 +1,4 @@
+/* TODO Ajouter une définition générale du style des images */
 
 h1 { /*Titre des activtés */
   margin-top: 0;
@@ -21,14 +22,12 @@ ul {
   padding-left: 20px;
 }
 div.doc {
-  padding: 1.5em 3em 2em 3em;
+  padding: 1em 2em 1.5em 2em;
   margin: 1em;
   /* width: 30em; */
   background-color: white;
   border-radius: 20px;
-  box-shadow: inset 0 1px 1px 0 hsl(0deg 0% 100% / 15%),
-    0 50px 100px -20px rgb(50 50 93 / 30%), 0 30px 60px -30px rgb(0 0 0 / 50%),
-    -10px 10px 60px -10px rgb(103 178 111 / 30%);
+  box-shadow: var(--main-box-shadow);
   line-height: 1.5;
   font-size: 1p6x;
 }
@@ -37,30 +36,31 @@ div.t {
   flex-direction: column;
   padding-bottom: 2em;
 }
+iframe.pdf {
+  margin: 1em 1em 1em 2em;
+  height: 800px;
+  border-radius: 7px;
+  box-shadow: var(--main-box-shadow);
+}
 /* --------------------------------- Thème 1 -------------------------------- */
 #t1 {
   background-color: rgb(255, 158, 158);
 }
 
 @media screen and (min-width: 1300px) {
-  .pdf1 {
-    margin: 1em 1em 1em 2em;
+  .t1-pdf {
     width: 72%;
-    height: 800px;
-    border-radius: 7px;
   }
   .girafe {
     height: 800px;
     width: 20%;
     border-radius: 10px;
     margin: 1em 1em 1em 2em;
+    box-shadow: var(--main-box-shadow);
   }
 }
 @media screen and (max-width: 1300px) {
-  .pdf1 {
-    margin: 1em 1em 1em 2em;
-    height: 800px;
-    border-radius: 7px;
+  .t1-pdf {
     width: 95%;
   }
   .girafe {
@@ -99,15 +99,81 @@ div.t3-elements {
   align-items: center;
   margin: 1em;
 }
-.python1 {
+div.t3-elements img.python1 {
   margin: 1em 0 1em 2em;
   border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
 }
-.elephant {
+div.t3-elements img.elephant {
   margin: 1em 1em 1em 2em;
   border-radius: 100%;
+  box-shadow: var(--main-box-shadow);
 }
 div.t3-explication {
   margin: 1em 0 1em 2em;
   width: 40em;
+}
+
+/* --------------------------------- Thème 4 -------------------------------- */
+#t4 {
+  background-color: rgb(80, 166, 209);
+}
+div.t4-explication {
+  margin: 1em 0 1em 2em;
+  width: 40em;
+}
+div.t4-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t4-part1 img {
+  height: 441px;
+  border-radius: 10px;
+  margin: 1em 1em 1em 2em;
+  box-shadow: var(--main-box-shadow);
+}
+div.t4-part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.t4-pdf {
+  width: 40%;
+}
+
+/* --------------------------------- Thème 5 -------------------------------- */
+#t5 {
+  background-color: rgb(80, 110, 209);
+}
+div.t5-explication {
+  margin: 1em 0 1em 2em;
+  width: 60em;
+}
+div.t5-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t5-part1 img {
+  height: 441px;
+  border-radius: 10px;
+  margin: 1em 1em 1em 2em;
+  box-shadow: var(--main-box-shadow);
+}
+div.t5-part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.t5-pdf {
+  width: 45%;
 }
