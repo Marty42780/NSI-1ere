@@ -1,6 +1,3 @@
-<!-- TODO: Index = introdution / acceuil -->
-<!-- TODO: Top-bar: Themes (grand), Zoo (petit), TierList (petit),  -->
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -12,19 +9,21 @@
     <!-- IMPORT OF #top-bat AND #menuDiv -->
     <script>acceuil = ["#", "disable"];</script>
     <script src="js/navigation.js"></script>
+    <script src="js/script.js"></script>
     <!-- Presentation -->
-    <section>
+    <section class="content">
       <div id="presentation">
         <h1>Hi! 👋 Je m'appelle Martin</h1>
         <h3>Je suis élève de 1ère 1 au Lycée Thomas Hélye</h3>
-        <p>
-          J'ai choisie la NSI pour en apprendre d'avantage dans le monde de la
-          programmation, de l'informatique, et de la technologie.
-        </p>
-        <p>
-          Depuis le début de l'année j'ai parcouru plein de thèmes à travers différentes
-          activités et je vous invite a les découvrir <a href="#" onclick="showMenu()" id="bioIci">ici</a>
-        </p>  
+        <div>
+          <p>👦</p><p>J'ai choisie la NSI pour en apprendre d'avantage dans le monde de la programmation, de l'informatique, et de la technologie.</p>
+        </div>
+        <div>
+          <p>👉</p><p>Depuis le début de l'année j'ai parcouru plein de thèmes à travers différentes activités et je vous invite a les découvrir <a href="#" onclick="showMenu()" id="bioIci"><em>ici</em></a>.</p>
+        </div>
+        <div>
+          <p><img src="images/accueil-github_logo.svg" height="15px"></p><p>Une page Github de l'ensemble du travail de l'année est disponible <a href="https://github.com/Marty42780/NSI-1ere"><em>ici</em></a>.</p>
+        </div>
       </div>
       <!-- Carousel -->
       <div id="carousel">
@@ -37,39 +36,39 @@
             <img src="images/python-logo.jpg">
           </div>
           <div class="slide">
-            <img src="images/girage2.jpg">
+            <img src="images/animaux/girafe.jpg">
           </div>
         </div>
         <a onclick="changeSlideWithButon(1)" class="next">&#10095;</a>
+        <script src="js/accueil-carousel.js"></script>
         <!-- TODO Add text -->
       </div>
     </section>
     <!-- Footer avec les liens -->
     <footer>
-      <a href="https://lycee-thomas-helye.fr/" id="link-lycee" target="_blank" rel="noopener noreferrer">
+      <a href="https://lycee-thomas-helye.fr/" target="_blank" rel="noopener noreferrer">
         <div>
           <img src="images/Logo_lycee_nofont.png">
           Site du Lycée
         </div>
       </a>
-      <a href="https://developer.mozilla.org/fr/" id="link-doc" target="_blank" rel="noopener noreferrer">
+      <a href="https://developer.mozilla.org/fr/" id="link-mdn_doc" target="_blank" rel="noopener noreferrer">
         <div>
           <img src="images/accueil-mdn_web_docs_logo.svg" class="mdn">
         </div>
       </a>
-      <a href="https://code.visualstudio.com/" id="link-vscode" target="_blank" rel="noopener noreferrer">
+      <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
         <div>
           <img src="images/accueil-vscode_logo.png" alt="Logo de VSCode">
           VSCode
         </div>
       </a>
-      <a href="https://github.com/"id="link-github" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
         <div>
           <img src="images/accueil-github_logo.svg" alt="Logo de Github">
           Github
         </div>
       </a>
     </footer>
-    <script src="js/script.js"></script>
   </body>
 </html>

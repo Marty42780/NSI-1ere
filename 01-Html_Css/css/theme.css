@@ -1,69 +1,93 @@
-/* TODO Ajouter une définition générale du style des images */
+/* -------------------------------------------------------------------------- */
+/*                                 Generalites                                */
+/* -------------------------------------------------------------------------- */
 
-h1 { /*Titre des activtés */
-  margin-top: 0;
-  text-align: center;
-  font-size: 28px;
+/* --------------------------------- Textes --------------------------------- */
+div.t { /* Div des themes */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
 }
 h3 { /* Numéros des activités */
   margin-top: 2em;
   text-align: center;
   font-size: 22px;
 }
-h2 { /*Titre des elements */
+h1:not(#top-bar h1) { /*Titre des activtés */
+  margin-top: 0;
+  text-align: center;
+  font-size: 28px;
+}
+h2 { /* Titre des elements */
   margin: 2em 2em 1em 2em;
 }
-p, ul {
-  font-size: 15;
-  line-height: 1.6;
-  font-weight: 500;
+/* ---------------- Zones dans les themes (ex: part1, part2) ---------------- */
+.t-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
 }
-ul {
-  padding-left: 20px;
-}
+
+
+/* -------------------------- Div de Documentation -------------------------- */
 div.doc {
+  display: flex;
+  flex-direction: column;
   padding: 1em 2em 1.5em 2em;
   margin: 1em;
-  /* width: 30em; */
   background-color: white;
   border-radius: 20px;
   box-shadow: var(--main-box-shadow);
   line-height: 1.5;
-  font-size: 1p6x;
 }
-div.t {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2em;
+p, ul:not(#top-bar ul){
+  font-size: 15;
+  line-height: 1.6;
+  font-weight: 500;
 }
+ul:not(#top-bar ul){
+  padding-left: 25px;
+}
+
+/* --------- Div : Autre élements (pdf, images) ----------*/
 iframe.pdf {
   margin: 1em 1em 1em 2em;
   height: 650px;
-  border-radius: 7px;
+  border-radius: 10px;
   box-shadow: var(--main-box-shadow);
 }
+img {
+  margin: 1em 1em 1em 2em;
+  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Theme par theme                              */
+/* -------------------------------------------------------------------------- */
+
 /* --------------------------------- Thème 1 -------------------------------- */
 #t1 {
   background-color: rgb(255, 158, 158);
 }
-
 @media screen and (min-width: 1300px) {
   .t1-pdf {
     width: 72%;
   }
-  .girafe {
-    height: 800px;
+  #t1 img.girafe {
+    height: 650px;
     width: 20%;
-    border-radius: 10px;
-    margin: 1em 1em 1em 2em;
-    box-shadow: var(--main-box-shadow);
   }
 }
 @media screen and (max-width: 1300px) {
   .t1-pdf {
     width: 95%;
   }
-  .girafe {
+  #t1 img.girafe {
     display: none;
   }
 }
@@ -72,75 +96,28 @@ iframe.pdf {
 #t2 {
   background-color: rgb(219, 205, 126);
 }
-div.t2-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+#t2 div.doc {
   align-items: center;
-  margin: 1em;
-}
-div.t2-larp {
-  margin: 1em 0 1em 2em;
-  width: 40em;
-}
-div.t2-algobox {
-  margin: 1em 0 1em 2em;
-  width: 40em;
 }
 
 /* --------------------------------- Thème 3 -------------------------------- */
 #t3 {
   background-color: rgb(80, 209, 170);
 }
-div.t3-elements {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t3-elements img.python1 {
-  margin: 1em 0 1em 2em;
-  border-radius: 10px;
-  box-shadow: var(--main-box-shadow);
-}
-div.t3-elements img.elephant {
-  margin: 1em 1em 1em 2em;
+#t3 img.elephant {
   border-radius: 100%;
-  box-shadow: var(--main-box-shadow);
-}
-div.t3-explication {
-  margin: 1em 0 1em 2em;
-  width: 40em;
 }
 
 /* --------------------------------- Thème 4 -------------------------------- */
 #t4 {
   background-color: rgb(80, 166, 209);
 }
-div.t4-explication {
+#t4 div.doc {
   margin: 1em 0 1em 2em;
   width: 40em;
 }
-div.t4-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t4-part1 img {
+#t4 img {
   height: 441px;
-  border-radius: 10px;
-  margin: 1em 1em 1em 2em;
-  box-shadow: var(--main-box-shadow);
-}
-div.t4-part2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
 }
 .t4-pdf {
   width: 40%;
@@ -150,32 +127,15 @@ div.t4-part2 {
 #t5 {
   background-color: rgb(80, 110, 209);
 }
-div.t5-explication {
+#t5 div.doc {
   margin: 1em 0 1em 2em;
   width: 60em;
 }
-div.t5-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t5-part1 img {
+#t5 img {
   width: 40%;
-  border-radius: 10px;
-  margin: 1em 1em 1em 2em;
-  box-shadow: var(--main-box-shadow);
 }
-div.t5-part1 img.t5-explication {
+#t5 div div img { /* Schema dans la div.doc */
   width: 70%;
-}
-div.t5-part2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
 }
 .t5-pdf {
   width: 45%;
@@ -185,103 +145,29 @@ div.t5-part2 {
 #t7 {
   background-color: rgb(151, 80, 209);
 }
-div.t7-explication {
-  margin: 1em 0 1em 2em;
-  width: 40em;
-}
-div.t7-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t7-part1 img {
+#t7 img.part1 {
   width: 27%;
-  border-radius: 10px;
-  margin: 1em 1em 1em 2em;
-  box-shadow: var(--main-box-shadow);
+}
+#t7 img.part2 {
+  height: 300px;
 }
 
-div.t7-part2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t7-part2 img {
-  border-radius: 10px;
-  box-shadow: var(--main-box-shadow);
-}
-div.t7-part2 img.t7-code {
-  height: 300px;
-}
-div.t7-part2 img.t7-result {
-  height: 300px;
-}
 
 /* --------------------------------- Thème 8 -------------------------------- */
 #t8 {
   background-color: rgb(218, 104, 184);
 }
-div.t8-explication {
-  margin: 1em 0 1em 2em;
-  width: 40em;
-}
-div.t8-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t8-part1 img {
+#t8 img.lion {
   width: 27%;
-  border-radius: 10px;
-  margin: 1em 1em 1em 2em;
-  box-shadow: var(--main-box-shadow);
 }
-
-div.t8-part2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t8-part2 img {
-  border-radius: 10px;
-  box-shadow: var(--main-box-shadow);
+#t8 img.part2 {
+  width: 90%;
 }
 
 /* --------------------------------- Thème 9 -------------------------------- */
 #t9 {
   background-color: rgb(223, 213, 83);
 }
-div.t9-explication {
-  margin: 1em 0 1em 2em;
-  width: 40em;
-}
-div.t9-part1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t9-part1 img {
+#t9 img {
   width: 27%;
-  border-radius: 10px;
-  margin: 1em 1em 1em 2em;
-  box-shadow: var(--main-box-shadow);
-}
-
-div.t9-part2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1em;
-}
-div.t9-part2 img {
-  border-radius: 10px;
-  box-shadow: var(--main-box-shadow);
 }
