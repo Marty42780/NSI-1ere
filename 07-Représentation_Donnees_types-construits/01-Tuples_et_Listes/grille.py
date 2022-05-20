@@ -50,6 +50,8 @@ def sommeDiagonale2(grille: list):
 
 grille0 = creeGrille(3,3)
 grille1 = [[1,2,3],[4,5,6],[7,8,9]]
+print("\n")
+print(afficheGrille(grille1))
 print("sommeLigne " + str(sommeLigne(grille1, 0)))
 print("sommeColone " + str(sommeColone(grille1, 0)))
 print("sommeDiagonale " + str(sommeDiagonale(grille1)))

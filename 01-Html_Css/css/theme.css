@@ -38,7 +38,7 @@ div.t {
 }
 iframe.pdf {
   margin: 1em 1em 1em 2em;
-  height: 800px;
+  height: 650px;
   border-radius: 7px;
   box-shadow: var(--main-box-shadow);
 }
@@ -162,10 +162,13 @@ div.t5-part1 {
   margin: 1em;
 }
 div.t5-part1 img {
-  height: 441px;
+  width: 40%;
   border-radius: 10px;
   margin: 1em 1em 1em 2em;
   box-shadow: var(--main-box-shadow);
+}
+div.t5-part1 img.t5-explication {
+  width: 70%;
 }
 div.t5-part2 {
   display: flex;
@@ -176,4 +179,109 @@ div.t5-part2 {
 }
 .t5-pdf {
   width: 45%;
+}
+
+/* --------------------------------- Thème 7 -------------------------------- */
+#t7 {
+  background-color: rgb(151, 80, 209);
+}
+div.t7-explication {
+  margin: 1em 0 1em 2em;
+  width: 40em;
+}
+div.t7-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t7-part1 img {
+  width: 27%;
+  border-radius: 10px;
+  margin: 1em 1em 1em 2em;
+  box-shadow: var(--main-box-shadow);
+}
+
+div.t7-part2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t7-part2 img {
+  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
+}
+div.t7-part2 img.t7-code {
+  height: 300px;
+}
+div.t7-part2 img.t7-result {
+  height: 300px;
+}
+
+/* --------------------------------- Thème 8 -------------------------------- */
+#t8 {
+  background-color: rgb(218, 104, 184);
+}
+div.t8-explication {
+  margin: 1em 0 1em 2em;
+  width: 40em;
+}
+div.t8-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t8-part1 img {
+  width: 27%;
+  border-radius: 10px;
+  margin: 1em 1em 1em 2em;
+  box-shadow: var(--main-box-shadow);
+}
+
+div.t8-part2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t8-part2 img {
+  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
+}
+
+/* --------------------------------- Thème 9 -------------------------------- */
+#t9 {
+  background-color: rgb(223, 213, 83);
+}
+div.t9-explication {
+  margin: 1em 0 1em 2em;
+  width: 40em;
+}
+div.t9-part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t9-part1 img {
+  width: 27%;
+  border-radius: 10px;
+  margin: 1em 1em 1em 2em;
+  box-shadow: var(--main-box-shadow);
+}
+
+div.t9-part2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+div.t9-part2 img {
+  border-radius: 10px;
+  box-shadow: var(--main-box-shadow);
 }
