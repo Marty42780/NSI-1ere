@@ -1,10 +1,12 @@
-section {
+section.content {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
+
+/* ------------------------------ Presentation ------------------------------ */
 #presentation {
   margin: 2em;
-  padding: 1.5em 3em 2em 3em;
+  padding: 0.7em 2.5em 1.2em 2.1em;
   width: 30em;
   background-color: white;
   border-radius: 20px;
@@ -12,12 +14,20 @@ section {
     0 50px 100px -20px rgb(50 50 93 / 30%), 0 30px 60px -30px rgb(0 0 0 / 50%),
     -10px 10px 60px -10px rgb(103 178 111 / 30%);
 }
+#presentation div {
+  display: flex;
+  align-items: baseline;
+}
 #presentation p {
   color: #333338;
   text-align: justify;
+  font-size: 15;
+  line-height: 1.6;
+  font-weight: 500;
+  padding-left: 0.7em;
 }
 
-/* Carousel */
+/* -------------------------------- Carousel -------------------------------- */
 #carousel {
   display: grid;
   grid-template-columns: 6% 91% 6%;
@@ -70,30 +80,40 @@ section {
 }
 /* TODO Add text */
 
+/* --------------------------------- Footer --------------------------------- */
 footer {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-
-footer div {
+footer a {
   margin: 2em 2em 2em 2em;
+}
+footer div {
+  /* Position */
   display: flex;
-  padding: 1em 1.5em 1em 1.5em;
-  align-items: center;
   height: 100px;
+  padding: 1em 1.5em 1em 1em;
+  align-items: center;
+  /* Style */
   background-color: white;
   border-radius: 20px;
   box-shadow: var(--main-box-shadow);
   border-radius: 20px;
-  color: #333338;
+  /* Text */
   font-size: 20px;
+  font-weight: bold;
+  color
 }
 footer a img {
   max-width: 10em;
   padding-right: 1.5em;
   max-height: 70px;
 }
-footer a img.mdn {
+#link-mdn_doc div {
+  padding: 1.5em;
+}
+#link-mdn_doc img {
   max-width: 100%;
   max-height: 80px;
   padding: 0;

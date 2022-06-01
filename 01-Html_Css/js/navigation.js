@@ -1,7 +1,7 @@
 try {if (acceuil[1] === "disable") {title = "Accueil"}} catch (e) {acceuil = ["index.html", "enable"]}    
 try {if (themes[1] === "disable") {title = "Thèmes"}} catch (e) {themes = ["themes.html", "enable"]}    
 try {if (animaux[1] === "disable") {title = "Zoo des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
-try {if (tierlist[1] === "disable") {title = "TierList"}} catch (e) {tierlist = ["tierlist.html", "enable"]}
+try {if (expose[1] === "disable") {title = "Exposé"}} catch (e) {expose = ["expose.html", "enable"]}
 
 document.write(`
 <link rel="stylesheet" href="css/navigation.css" />
@@ -17,8 +17,8 @@ document.write(`
         <a href="` + animaux[0] + `" class="` + animaux[1] + ` animaux"> 
             <li>Animaux</li> 
         </a>
-        <a href="` + tierlist[0] + `" class="` + tierlist[1] + ` tierlist"> 
-            <li>Tierlist</li> 
+        <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
+            <li>[En traveaux] Exposé</li> 
         </a>
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
     </ul>
@@ -46,13 +46,14 @@ document.write(`
             <h1>Promenade avec les animaux</h1>
         </div>
     </a>
-    <a href="https://youtu.be/dQw4w9WgXcQ">
-        <div class="` + animaux[1] + ` animaux"">
-            <img src="images/python-logo.jpg" alt="" />
-            <h2>Youtube</h2>
-            <h1>Never Gonna Give You Up</h1>
+    <a href="` + expose[0] + `">
+        <div class="` + expose[1] + ` expose">
+            <img src="images/algobox-dev.png" alt="" />
+            <h2>[En traveaux] Exposé</h2>
+            <h1>Les languages de programation</h1>
         </div>
     </a>
 </div>
 </div>
 `);
+
