@@ -58,7 +58,7 @@ iframe.pdf {
   border-radius: 10px;
   box-shadow: var(--main-box-shadow);
 }
-img {
+img:not(#menuDiv img) {
   margin: 1em 1em 1em 2em;
   border-radius: 10px;
   box-shadow: var(--main-box-shadow);
@@ -128,7 +128,6 @@ img {
   background-color: rgb(80, 110, 209);
 }
 #t5 div.doc {
-  margin: 1em 0 1em 2em;
   width: 60em;
 }
 #t5 img {
@@ -156,6 +155,9 @@ img {
 /* --------------------------------- Thème 8 -------------------------------- */
 #t8 {
   background-color: rgb(218, 104, 184);
+}
+#t8 div.doc {
+  width: 50%;
 }
 #t8 img.lion {
   width: 27%;
