@@ -1,6 +1,6 @@
 try {if (acceuil[1] === "disable") {title = "Accueil"}} catch (e) {acceuil = ["index.html", "enable"]}    
 try {if (themes[1] === "disable") {title = "Thèmes"}} catch (e) {themes = ["themes.html", "enable"]}    
-try {if (animaux[1] === "disable") {title = "Zoo des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
+try {if (animaux[1] === "disable") {title = "Promenade des Animaux"}} catch (e) {animaux = ["animaux.html", "enable"]}  
 try {if (expose[1] === "disable") {title = "Exposé"}} catch (e) {expose = ["expose.html", "enable"]}
 
 document.write(`
