@@ -10,12 +10,10 @@
     <script>acceuil = ["#", "disable"];</script>
     <script src="js/navigation.js"></script>
     <script src="js/script.js"></script>
-    <section>
-      
-    </section>
-    <!-- Presentation -->
-    <section class="content">
-      <div id="presentation">
+    <center><section class="content">
+      <section class="zone z1"> <!-- Zone 1 -->
+        <!-- Presentation -->
+        <div id="presentation">
         <center><h1>Hi! 👋 Je m'appelle Martin</h1>
         <h3>Je suis élève de 1ère 1 au Lycée Thomas Hélye</h3></center>
         <div>
@@ -25,53 +23,62 @@
           <p>👉</p><p>Depuis le début de l'année j'ai parcouru plein de thèmes à travers différentes activités et je vous invite a les découvrir <a href="#" onclick="showMenu()" id="bioIci"><em>ici</em></a>.</p>
         </div>
         <div>
-          <p><img src="images/accueil-github_logo.svg" height="15px"></p><p>Une page Github de l'ensemble du travail de l'année est disponible <a href="https://github.com/Marty42780/NSI-1ere"><em>ici</em></a>.</p>
+          <p><img src="images/accueil-github_logo.svg" height="15px"></p><p>Une page Github de l'ensemble du travail de l'année est disponible <a href="https://github.com/Marty42780/NSI-1ere" target="_blank" rel="noopener noreferrer"><em>ici</em></a>.</p>
         </div>
-      </div>
-      <!-- Carousel -->
-      <div id="carousel">
+        </div>
+        <!-- Carousel -->
+        <div id="carousel">
         <a onclick="changeSlideWithButon(-1)" class="prev">&#10094;</a>
         <div class="slidesView">
           <div class="slide">
-            <img src="images/carousel.jpeg">  
+            <img src="images/carousel.jpeg">
+            <p>Le carousel</p>
           </div>
           <div class="slide">
             <img src="images/python-logo.jpg">
+            <p>Le langage de programmation Python</p>
           </div>
           <div class="slide">
             <img src="images/animaux/girafe.jpg">
+            <p>Les promenades animals sont ouvertes</p>
           </div>
         </div>
         <a onclick="changeSlideWithButon(1)" class="next">&#10095;</a>
         <script src="js/accueil-carousel.js"></script>
-        <!-- TODO Add text -->
-      </div>
+        </div>
+      </section>
+      <section class="zone z2"> <!-- Zone 2 -->
+        <!-- Demo -->
+        <div id="demo">
+
+        </div>
+      </section>
+      <footer class="zone zfooter">
+        <a href="https://lycee-thomas-helye.fr/" target="_blank" rel="noopener noreferrer">
+          <div>
+            <img src="images/Logo_lycee_nofont.png">
+            Site du Lycée
+          </div>
+        </a>
+        <a href="https://developer.mozilla.org/fr/" id="link-mdn_doc" target="_blank" rel="noopener noreferrer">
+          <div>
+            <img src="images/accueil-mdn_web_docs_logo.svg" class="mdn">
+          </div>
+        </a>
+        <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+          <div>
+            <img src="images/accueil-vscode_logo.png" alt="Logo de VSCode">
+            VSCode
+          </div>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <div>
+            <img src="images/accueil-github_logo.svg" alt="Logo de Github">
+            Github
+          </div>
+        </a>
+      </footer>
     </section>
-    <!-- Footer avec les liens -->
-    <footer>
-      <a href="https://lycee-thomas-helye.fr/" target="_blank" rel="noopener noreferrer">
-        <div>
-          <img src="images/Logo_lycee_nofont.png">
-          Site du Lycée
-        </div>
-      </a>
-      <a href="https://developer.mozilla.org/fr/" id="link-mdn_doc" target="_blank" rel="noopener noreferrer">
-        <div>
-          <img src="images/accueil-mdn_web_docs_logo.svg" class="mdn">
-        </div>
-      </a>
-      <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
-        <div>
-          <img src="images/accueil-vscode_logo.png" alt="Logo de VSCode">
-          VSCode
-        </div>
-      </a>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-        <div>
-          <img src="images/accueil-github_logo.svg" alt="Logo de Github">
-          Github
-        </div>
-      </a>
-    </footer>
+  </center>
   </body>
 </html>

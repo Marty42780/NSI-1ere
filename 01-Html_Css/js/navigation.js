@@ -18,7 +18,7 @@ document.write(`
             <li>Animaux</li> 
         </a>
         <a href="` + expose[0] + `" class="` + expose[1] + ` expose"> 
-            <li>[En traveaux] Exposé</li> 
+            <li>Exposé</li> 
         </a>
         <button id="menuButton" onclick="showMenu()">Tout voir</button>
     </ul>
@@ -41,7 +41,7 @@ document.write(`
     </a>
     <a href="` + animaux[0] + `">
         <div class="` + animaux[1] + ` animaux">
-            <img src="images/algobox-dev.png" alt="" />
+            <img src="images/animaux/panda.jpg" alt="" />
             <h2>Animaux</h2>
             <h1>Promenade avec les animaux</h1>
         </div>
@@ -49,7 +49,7 @@ document.write(`
     <a href="` + expose[0] + `">
         <div class="` + expose[1] + ` expose">
             <img src="images/algobox-dev.png" alt="" />
-            <h2>[En traveaux] Exposé</h2>
+            <h2>Exposé</h2>
             <h1>Les languages de programation</h1>
         </div>
     </a>

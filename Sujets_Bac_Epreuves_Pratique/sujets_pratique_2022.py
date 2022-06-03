@@ -162,6 +162,4 @@ def fusion(L1,L2):
         i = ...
     return L12
 
-# TODO: compléter la fonction fusion
-
 print(fusion([1,6,10],[0,7,8,9]))
