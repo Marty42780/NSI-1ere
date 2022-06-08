@@ -3,6 +3,10 @@
 /* -------------------------------------------------------------------------- */
 
 /* --------------------------------- Textes --------------------------------- */
+h1, h3, p, ul {
+  color: var(--dark-solid-text-color)
+}
+
 div.t { /* Div des themes */
   display: flex;
   flex-direction: column;

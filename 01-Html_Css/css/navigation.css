@@ -6,6 +6,11 @@
   box-sizing: border-box;
   
   --text: #333338;
+  --dark-solid-text-color: #333338;
+  --dark-light-text-color: #3b3b3b;
+  --light-light-text-color: #c2c2cf;
+  --light-solid-text-color: #ececff;
+
   --accueil: #CD6155; /* POMEGRANATE */
   --themes: #AF7AC5; /* AMETHYST */
   --animaux: #5499c7; /* BELIZE HOLE */
@@ -147,12 +152,12 @@ body {
   text-decoration: none;
 }
 #menuDiv h2 {
-  color: var(--text);
+  color: var(--dark-solid-text-color);
   margin: 0.5em 0 0 0;
   text-transform: uppercase;
 }
 #menuDiv h1 {
-  color: var(--text);
+  color: var(--dark-solid-text-color);
   padding: 0.3em 0.5em 0.5em 0.5em;
   margin: 0;
 }

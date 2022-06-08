@@ -4,23 +4,30 @@ body {
 }
 .content {
   display: flex;
-  width: 90%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  left: 0;
+  
 }
 .zone {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
+
+
 /* -------------------------------------------------------------------------- */
-/*                                     Zone 1                                     */
+/*                                   Zone 1                                   */
 /* -------------------------------------------------------------------------- */
 
-/* .z1 {
-NON UTILISE
-} */
+@media screen and (max-width: 1300px) {
+  .z1 {
+    flex-direction: column;
+  }
+}
+
 
 /* ------------------------------ Presentation ------------------------------ */
 #presentation {
@@ -38,7 +45,7 @@ NON UTILISE
   align-items: baseline;
 }
 #presentation p {
-  color: var(--text);
+  color: var(--dark-solid-text-color);
   text-align: justify;
   font-size: 15;
   line-height: 1.6;
@@ -75,7 +82,7 @@ NON UTILISE
 }
 .slide p {
   position: absolute;
-  color: var(--text);
+  color: var(--dark-solid-text-color);
   font-size: 20px;
   font-weight: 500;
   padding: 5px 12px 5px 12px;
@@ -112,12 +119,9 @@ NON UTILISE
   background-color: #636363;
 }
 /* -------------------------------------------------------------------------- */
-/*                                     Zone 2                                     */
+/*                                   Zone 2                                   */
 /* -------------------------------------------------------------------------- */
 
-.z2 {
-  width: 100%;
-}
 
 /* ---------------------------------- Demo ---------------------------------- */
 
@@ -127,22 +131,33 @@ NON UTILISE
   height: 100%;
   margin: 2em;
   padding: 1em;
+  flex-direction: column;
   background-color: #0d1117;
   border-radius: 20px;
   box-shadow: inset 0 1px 1px 0 hsl(0deg 0% 100% / 15%),
     0 50px 100px -20px rgb(50 50 93 / 30%), 0 30px 60px -30px rgb(0 0 0 / 50%),
     -10px 10px 60px -10px rgb(103 178 111 / 30%);
 }
-
+#demo h2, h4, p, ul {
+  color: var(--light-solid-text-color)
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   zfooter                                  */
 /* -------------------------------------------------------------------------- */
+
 footer {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 1300px) {
+  .footer {
+    grid-template-columns: 2fr;
+  }
+}
+
+
 footer a {
   margin: 2em 2em 2em 2em;
 }
