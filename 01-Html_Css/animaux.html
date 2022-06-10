@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/animaux.css" />
     <link rel="stylesheet" href="css/navigation.css" />
-    <title>NSI 1ère Martin Pasquier</title>
+    <title>Animaux - NSI Martin Pasquier</title>
+    <script src="js/animaux.js"></script>
   </head>
   <body>
     <!-- IMPORT OF #top-bat AND #menuDiv -->
@@ -55,7 +56,7 @@
           <h1>Yakari le Cheval</h1>
           <div class="pay">
             <h2>699,99 €</h2>
-            <button>Ajouter</button>
+            <button onclick="ajouterAuPanier('Simba','999,99 €','lion.png')">Ajouter</button>
           </div>
         </div>
         <div id="product"> <!-- Lama -->
@@ -66,7 +67,7 @@
           <h1>Hirma le Lama</h1>
           <div class="pay">
             <h2>799,99 €</h2>
-            <button>Ajouter</button>
+            <button onclick="ajouterAuPanier('Hirma','999,99 €','lion.png')">Ajouter</button>
           </div>
         </div>
         <div id="product"> <!-- Lion -->
@@ -74,22 +75,17 @@
             <img src="images/animaux/lion.png" alt="">
           </section>
           <section>
-          <h1>Simba le Panda</h1>
+          <h1>Simba le Lion</h1>
           <div class="pay">
             <h2>999,99 €</h2>
-            <button>Ajouter</button>
+            <button onclick="ajouterAuPanier('Simba','999,99 €','lion.png')">Ajouter</button>
           </div>
         </div>
       </div>
       <div id="panier">
         <h1>Panier</h1>
         <div class="items">
-          <div class="item">
-            <img src="images/animaux/chameau.jpg"  class="animal">
-            <h2>Kevin le Chameau</h2>
-            <div><h3>299,99 €</h3></div>
-            <button><img src="images/trash_icon.png" class="trash-icon"></button>
-          </div>
+          <!-- Insert of items :  -->
         </div>
       </div>
     </div>
